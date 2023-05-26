@@ -1,7 +1,7 @@
 # tool_HYDROLOGY
 
 This hydrology tool is based on the template for a generic containerized R tool following the [Tool Specification](https://vforwater.github.io/tool-specs/) for reusable research software using Docker.
-
+The Basic Idea is a generic hydrology tool for analyzing various fluxes and variables of interest at the catchment scale
 The README would be updated as the tool nears completion.
 
 ## How generic?
