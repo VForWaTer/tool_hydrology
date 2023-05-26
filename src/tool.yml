@@ -1,25 +1,19 @@
 tools:
-  foobar:
-    title: Foo Bar
-    description: A dummy tool to exemplify the YAML file
+  baseflow_seperation:
+    title:  baseflow seperation methods
+    description: Basic hydrology tool for implementing different baseflow seperation algorithms from [grwat](https://github.com/tsamsonov/grwat) package
     version: 0.1
     parameters:
-      foo_int: 
-        type: integer
-      foo_float:
+      time: 
         type: float
-      foo_string:
-        type: string
-      foo_enum:
-        type: enum
-        values:
-          - foo
-          - bar
-          - baz
-      foo_array:
+      discharge:
         type: float
-        array: true 
-      foo_matrix:
-        type: file
-      foo_csv:
-        type: file
+  identify_gaps:
+    title:  identify missing data
+    description: function to detect missing periods from [grwat](https://github.com/tsamsonov/grwat) package
+    version: 0.1
+    parameters:
+      time: 
+        type: float
+      discharge:
+        type: float        

@@ -13,7 +13,7 @@ install.packages('grwat')
 # make functions from main file available
 source('functions.R')
 
-# make workflows from  file available
+# make entire workflows from  file available
 source('workflows.R')
 
 if (toolname == "") {
