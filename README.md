@@ -1,8 +1,8 @@
-# tool_template_r
+# tool_HYDROLOGY
 
-This is the template for a generic containerized R tool following the [Tool Specification](https://vforwater.github.io/tool-specs/) for reusable research software using Docker.
+This hydrology tool is based on the template for a generic containerized R tool following the [Tool Specification](https://vforwater.github.io/tool-specs/) for reusable research software using Docker.
 
-This template can be used to generate new Github repositories from it.
+The README would be updated as the tool nears completion.
 
 ## How generic?
 
