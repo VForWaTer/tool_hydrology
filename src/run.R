@@ -7,6 +7,15 @@ params <- get_parameters()
 # check which tool to run
 toolname <- tolower(Sys.getenv("TOOL_RUN"))
 
+# Install the third party R packages
+install.packages('grwat')
+
+# make functions from main file available
+source('functions.R')
+
+# make workflows from  file available
+source('workflows.R')
+
 if (toolname == "") {
     toolname <- "foobar"
 }
