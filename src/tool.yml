@@ -2,18 +2,14 @@ tools:
   baseflow_seperation:
     title:  baseflow seperation methods
     description: Basic hydrology tool for implementing different baseflow seperation algorithms from [grwat](https://github.com/tsamsonov/grwat) package
-    version: 0.1
     parameters:
-      time: 
-        type: float
       discharge:
-        type: float
+        type: file
+        description: The tool needs a CSV containing discharge measurements, indexed by a timestamp on any temporal resolution.
   identify_gaps:
     title:  identify missing data
     description: function to detect missing periods from [grwat](https://github.com/tsamsonov/grwat) package
-    version: 0.1
     parameters:
-      time: 
-        type: float
       discharge:
-        type: float        
+        type: file
+        description: The tool needs a CSV containing discharge measurements, indexed by a timestamp on any temporal resolution.
