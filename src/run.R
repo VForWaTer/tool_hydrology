@@ -7,6 +7,9 @@ params <- get_parameters()
 # check which tool to run
 toolname <- tolower(Sys.getenv("TOOL_RUN"))
 
+# extract the discharge timeseries
+df = params$discharge 
+
 # Install the third party R packages
 install.packages('grwat')
 
