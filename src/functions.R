@@ -57,6 +57,8 @@ baseflow_seperation <- function(df){
     facet_wrap(~Method)
 
   dev.off()
+
+  return(df)
 }
 
 identify_gaps <- function(df){
@@ -64,8 +66,11 @@ identify_gaps <- function(df){
   #' is considered to be a gap if any value in the row is missing
   #' Hence cannot identify when both time and value is missing
   #' Refer https://github.com/tsamsonov/grwat (gr_get_gap) for more details
-  missing_df = gr_get_gap(hdata)
+  missing_df = gr_get_gap(df)
 
   # Save as RDS Object
-  saveRDS( missing_df,file = "/out/missing_df.Rds")
+  saveRDS(missing_df, file = "/out/missing_df.Rds")
+  write.csv(missing_df, file = "/out/missing_df.csv")
+
+  return(missing_df)
 }
