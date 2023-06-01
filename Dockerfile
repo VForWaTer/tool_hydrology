@@ -6,7 +6,11 @@ FROM r-base:4.2.0
 RUN R -e "install.packages('json2aRgs')"
 
 # Do anything you need to install tool dependencies here
-RUN echo "Replace this line with a tool"
+RUN R -e "install.packages('grwat')"
+RUN R -e "install.packages('ggplot2')"
+RUN R -e "install.packages('dplyr')"
+RUN R -e "install.packages('tidyr')"
+RUN R -e "install.packages('lubridate')"
 
 # create the tool input structure
 RUN mkdir /in
